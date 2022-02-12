@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-dark: #6d5b40;
+  --primary-medium: #857250;
+  --primary-light: #eeece7;
+  --primary-light-2: #dad4ca;
+  --success-dark: #42be65;
+  --danger-dark: #da1e28;
+  --blue-dark: #0645ad;
+  --white: #fff;
+  --black: #000;
+  --black-mid: #0a0a0a;
+  --dm-sans: 'DM Sans', Helvetica, Arial, sans-serif;
+  --dm-serif-display: 'DM Serif Display', Helvetica, Arial, sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
