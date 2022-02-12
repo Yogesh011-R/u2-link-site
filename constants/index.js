@@ -1,50 +1,52 @@
-export const sellerData = [
+export const buyerData = [
   {
     id: 1,
-    heading: 'Add product details',
+    heading: 'Fill the details ',
     description:
-      'Add all the required details to share with the customer to process an order',
+      'Add all those details requested by the fashion designer to stitch your product',
     image: '/images/seller1.png',
     classes: '',
   },
   {
     id: 2,
-    heading: 'SHARE IT',
-    description: 'Share the order lynk with the customer',
+    heading: 'Track orders',
+    description:
+      'Track your order status easily with the single click from the respective courier partners ',
     image: '/images/seller2.png',
     classes: 'order-2',
   },
   {
     id: 3,
-    heading: 'EARN CASH',
+    heading: 'Trust & Repeat',
     description:
-      'Shipping is easy with our pre-paid label, and you’ll get cash in your pocket when the item is delivered!',
+      'You can trust a designers process and repeat your orders with various fashion designers',
     image: '/images/seller3.png',
     classes: '',
   },
 ];
 
-export const buyerData = [
+export const sellerData = [
   {
     id: 1,
-    heading: 'Add product details',
+    heading: 'Create Lynk',
     description:
-      'Add all the required details to share with the customer to process an order',
+      'Add all the required details like product link, image, price, measurements, shipping and payment method to share the order lynk with the customer.',
     image: '/images/seller1.png',
     classes: '',
   },
   {
     id: 2,
-    heading: 'SHARE IT',
-    description: 'Share the order lynk with the customer',
+    heading: 'Share the lynk ',
+    description:
+      'Share the lynk created with the customer to easily process the orders',
     image: '/images/seller2.png',
     classes: 'order-2',
   },
   {
     id: 3,
-    heading: 'EARN CASH',
+    heading: 'Earn & Grow',
     description:
-      'Shipping is easy with our pre-paid label, and you’ll get cash in your pocket when the item is delivered!',
+      'Seamlessly interact with the customers and grow your business.',
     image: '/images/seller3.png',
     classes: '',
   },

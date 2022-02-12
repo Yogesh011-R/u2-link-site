@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: [
@@ -7,6 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: '530px',
+        // => @media (min-width: 640px) { ... }
+
+        md: '768px',
+        // => @media (min-width: 768px) { ... }
+
+        lg: '1024px',
+        // => @media (min-width: 1024px) { ... }
+
+        xl: '1280px',
+        // => @media (min-width: 1280px) { ... }
+
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
       fontFamily: {
         dmSans: 'var(--dm-sans)',
         dmSerif: 'var(--dm-serif-display)',
@@ -26,4 +42,4 @@ module.exports = {
   },
   plugins: [],
   important: true,
-}
+};

@@ -4,11 +4,11 @@ const Hero = () => {
       <div className='container grid h-auto justify-between px-4 pt-10 pb-72 sm:pt-20 md:mx-auto md:h-full md:grid-cols-2 md:gap-4 md:px-7 md:py-40 xl:gap-0'>
         <div className=''>
           <h1 className='font-dmSerif text-[30px] text-white sm:text-[52px]  md:text-[48px] lg:text-[60px] xl:text-[72px]'>
-            Build your Online Store from your Instagram profile for free
+            Catalog less app <br />
+            for fashion designers
           </h1>
           <p className='font-dmSans mt-5 text-base text-white md:text-[18px] lg:text-[17px] xl:text-[18px]'>
-            No matter what type of business you run, u2lynk allows you to get
-            your business online in minutes.
+            Seamlessly sell products from any social media platform on U2Lynk
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const Hero = () => {
             />
           </div>
 
-          <div className='absolute right-[20%] top-28 md:top-20 md:right-[-50px] md:h-[350px] lg:right-[-45px] lg:h-[400px] xl:right-[-20px] xl:h-full 2xl:right-0'>
+          <div className='absolute right-[50%] top-28 h-[360px] translate-x-2/4 sm:top-40 sm:right-52 sm:translate-x-0 md:top-20 md:right-[-50px] md:h-[350px] lg:right-[-45px] lg:h-[400px] xl:right-[-20px] xl:h-full 2xl:right-0'>
             <img src='/images/hero2.png' className='h-full w-full' alt='' />
           </div>
         </div>
