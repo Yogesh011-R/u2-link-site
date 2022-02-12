@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className=' h-[275px] bg-[#F9F9F7]'>
       <div className='container mx-auto  '>
-        <div className=' gap-40 px-5 pb-16 pt-20 md:flex md:px-0'>
+        <div className='gap-40 px-5 pb-16 pt-12 sm:pt-20 md:flex md:px-0'>
           <div>
             <img src='/images/logo.svg' alt='' />
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         <div className='h-[0.5px] w-full bg-[#9D8E73]'></div>
         <div>
-          <h2 className='font-dmSans my-4 text-center text-[16px]'>
+          <h2 className='font-dmSans py-5 text-center text-[16px]'>
             © 2021 U2lynk All rights reserved.
           </h2>
         </div>

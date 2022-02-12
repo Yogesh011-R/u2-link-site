@@ -1,4 +1,5 @@
 import React from 'react';
+import { paymentIcons, paymentImages } from '../constants';
 
 const Payment = () => {
   return (
@@ -13,10 +14,39 @@ const Payment = () => {
           </h1>
           <p className='hidden text-lg md:block'>
             All common payment methods are possible in your u2lynk. Don't just
-            choose between credit card, invoice, cash on pick-up and cash on
-            delivery. But also use all other payment methods like PayPal and
-            Amazon Pay. There are many more waiting for you.
+            choose between credit card, invoice,
+            {/* cash on pick-up and cash on delivery.  */}
+            But also use all other payment methods like PayPal and Amazon Pay.
+            There are many more waiting for you.
           </p>
+          <div className='my-10 hidden md:block'>
+            <div className='flex gap-5'>
+              {paymentImages.map(item => {
+                return (
+                  <div
+                    key={item.id}
+                    className='flex h-[45px] w-[66px] items-center justify-center rounded-lg border-2'
+                  >
+                    <div>
+                      <img src={item.image} alt='payment' />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className='mt-6 flex gap-5'>
+              {paymentIcons.map(item => {
+                return (
+                  <div
+                    key={item.id}
+                    className=' flex h-[45px] w-[66px]  items-center justify-center rounded-lg border-2'
+                  >
+                    <img src={item.image} alt='payment' />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div className='relative my-8 mx-auto h-96 w-40 sm:h-[628px] sm:w-[283px] md:my-0'>
           <img
@@ -42,6 +72,34 @@ const Payment = () => {
             delivery. But also use all other payment methods like PayPal and
             Amazon Pay. There are many more waiting for you.
           </p>
+        </div>
+        <div className='my-10  px-5 md:hidden'>
+          <div className='flex flex-wrap gap-5'>
+            {paymentImages.map(item => {
+              return (
+                <div
+                  key={item.id}
+                  className='flex h-[45px] w-[66px] items-center justify-center rounded-lg border-2'
+                >
+                  <div>
+                    <img src={item.image} alt='payment' />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className='mt-6 flex gap-5'>
+            {paymentIcons.map(item => {
+              return (
+                <div
+                  key={item.id}
+                  className=' flex h-[45px] w-[66px]  items-center justify-center rounded-lg border-2'
+                >
+                  <img src={item.image} alt='payment' />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

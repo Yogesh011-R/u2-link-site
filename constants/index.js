@@ -51,3 +51,47 @@ export const sellerData = [
     classes: '',
   },
 ];
+
+export const paymentImages = [
+  {
+    id: 1,
+    image: '/icons/payment1.png',
+  },
+  {
+    id: 2,
+    image: '/icons/payment2.png',
+  },
+  {
+    id: 3,
+    image: '/icons/payment3.png',
+  },
+
+  {
+    id: 4,
+    image: '/icons/payment4.png',
+  },
+
+  {
+    id: 5,
+    image: '/icons/payment5.png',
+  },
+];
+
+export const paymentIcons = [
+  {
+    id: 1,
+    image: '/icons/icon1.png',
+  },
+  {
+    id: 2,
+    image: '/icons/icon2.png',
+  },
+  {
+    id: 3,
+    image: '/icons/icon3.png',
+  },
+  {
+    id: 4,
+    image: '/icons/icon4.png',
+  },
+];
