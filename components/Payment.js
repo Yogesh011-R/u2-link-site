@@ -15,7 +15,7 @@ const Payment = () => {
           <p className='hidden text-lg md:block'>
             All common payment methods are possible in your u2lynk. Don't just
             choose between credit card, invoice,
-            {/* cash on pick-up and cash on delivery.  */} &nbsp;
+            &nbsp;
             But also use all other payment methods like PayPal and Amazon Pay.
             There are many more waiting for you.
           </p>
