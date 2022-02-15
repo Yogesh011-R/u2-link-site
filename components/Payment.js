@@ -3,7 +3,7 @@ import { paymentIcons, paymentImages } from '../constants';
 
 const Payment = () => {
   return (
-    <div className='container my-10 mx-auto h-auto md:my-0 md:h-screen'>
+    <div className='container my-10 mx-auto h-auto overflow-hidden px-4 md:my-0 md:h-screen'>
       <div className='grid h-auto items-center md:h-full md:grid-cols-2  md:gap-16'>
         <div className='px-5 md:px-0'>
           <h2 className='w-fit rounded-[5px] bg-[#c4c4c468]  py-1  px-4 text-xs sm:text-base'>
@@ -14,10 +14,9 @@ const Payment = () => {
           </h1>
           <p className='hidden text-lg md:block'>
             All common payment methods are possible in your u2lynk. Don't just
-            choose between credit card, invoice,
-            &nbsp;
-            But also use all other payment methods like PayPal and Amazon Pay.
-            There are many more waiting for you.
+            choose between credit card, invoice, &nbsp; But also use all other
+            payment methods like PayPal and Amazon Pay. There are many more
+            waiting for you.
           </p>
           <div className='my-10 hidden md:block'>
             <div className='flex gap-5'>
@@ -48,7 +47,8 @@ const Payment = () => {
             </div>
           </div>
         </div>
-        <div className='relative my-8 mx-auto h-96 w-40 sm:h-[628px] sm:w-[283px] md:my-0'>
+
+        <div className='md:my-  0 relative my-8 mx-auto h-96 w-40 sm:h-[628px] sm:w-[283px]'>
           <img
             src='/images/payment1.png'
             className='h-full w-full rounded-lg object-cover shadow-2xl '
@@ -65,11 +65,13 @@ const Payment = () => {
             alt=''
           />
         </div>
+
         <div className='my-8 px-5 md:hidden md:px-0'>
           <p className='text-base sm:text-lg '>
             All common payment methods are possible in your u2lynk. Don't just
-            choose between credit card, invoice, But also use all other payment methods like PayPal and
-            Amazon Pay. There are many more waiting for you.
+            choose between credit card, invoice, But also use all other payment
+            methods like PayPal and Amazon Pay. There are many more waiting for
+            you.
           </p>
         </div>
         <div className='my-10  px-5 md:hidden'>
