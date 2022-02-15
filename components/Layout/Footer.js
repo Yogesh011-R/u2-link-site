@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className=' h-[275px] bg-[#F9F9F7]'>
+    <footer className='h-auto bg-[#F9F9F7] xl:h-[275px]'>
       <div className='container mx-auto  '>
         <div className='gap-40 px-5 pb-16 pt-12 sm:pt-20 md:flex md:px-0'>
           <div>
@@ -10,21 +11,34 @@ const Footer = () => {
           </div>
           <div className='mt-10 md:mt-0'>
             <h2 className='font-dmSerif text-[20px]'>Important links</h2>
-            <ul className='font-dmSans mt-5 grid  flex-wrap gap-4 text-base underline sm:flex '>
+            <ul className='font-dmSans mt-5 grid  list-none flex-wrap gap-4 text-base underline sm:flex '>
               <li className=''>
-                <a href='#'>FAQs Customers</a>
+                <Link href='/support/faq'>FAQs Customers</Link>
               </li>
               <li className=''>
-                <a href='#'>Return and Refund</a>
+                <Link href='/support/faq-vendors'>FAQs Vendors</Link>
               </li>
               <li className=''>
-                <a href='#'>Privary Policy</a>
+                <Link href='/support/return-and-refund-policy'>
+                  Return and Refund
+                </Link>
               </li>
               <li className=''>
-                <a href='#'>Shipping Policy</a>
+                <Link href='/support/cancellations'>Cancellationsd</Link>
               </li>
               <li className=''>
-                <a href='#'>Terms & Conditions</a>
+                <Link href='/support/privacy-policy'>Privary Policy</Link>
+              </li>
+              <li className=''>
+                <Link href='/support/shipping-policy'>Shipping Policy</Link>
+              </li>
+              <li className=''>
+                <Link href='/support/gift-card'>Gift Card</Link>
+              </li>
+              <li className=''>
+                <Link href='/support/terms-and-conditions'>
+                  Terms & Conditions
+                </Link>
               </li>
             </ul>
           </div>

@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 img,
 picture {
@@ -38,4 +39,354 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+@layer base {
+  ul,
+  ol {
+    list-style: revert;
+  }
+}
+
+/* Accordion */
+
+.support--pages__accordion--styles h1 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0a0a0a;
+}
+@media screen and (max-width: 479px) {
+  .support--pages__accordion--styles h1 {
+    font-family: DM Sans !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* color: #0a0a0a !important; */
+  }
+}
+.support--pages__accordion--styles h4 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3b3b3b;
+}
+.support--pages__accordion--styles h4 ul,
+.support--pages__accordion--styles h4 ol {
+  margin: 1rem 0;
+  margin-left: 50px;
+}
+.support--pages__accordion--styles h4 ul li,
+.support--pages__accordion--styles h4 ol li {
+  margin: 0.5rem 0;
+}
+.support--pages__accordion--styles h4 ul li::marker,
+.support--pages__accordion--styles h4 ol li::marker {
+  width: 8px;
+  height: 8px;
+  color: #6a5b40;
+}
+@media screen and (max-width: 479px) {
+  .support--pages__accordion--styles h4 {
+    font-family: DM Sans !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.support--pages__accordion--styles .MuiPaper-elevation1 {
+  box-shadow: none !important;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.24) !important;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.24) !important;
+  border-radius: none !important;
+}
+.support--pages__accordion--styles .MuiPaper-elevation1:last-of-type {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.24) !important;
+}
+.support--pages__accordion--styles .MuiAccordion-rounded:last-child {
+  border-radius: 0px !important;
+}
+.support--pages__accordion--styles .MuiAccordion-rounded:first-child {
+  border-radius: 0px !important;
+}
+.support--pages__accordion--styles .MuiAccordionSummary-content {
+  margin: 18px 0 !important;
+}
+.support--pages__accordion--styles .MuiAccordion-root.Mui-expanded {
+  margin: 0 !important;
+}
+/* Term  N Condution */
+
+.termsMain h2 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3b3b3b;
+}
+@media screen and (max-width: 479px) {
+  .termsMain h2 {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.TermNConditionsList h1 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+  color: #3b3b3b;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 479px) {
+  .TermNConditionsList h1 {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.TermNConditionsList ul {
+  margin-left: 15px;
+}
+.TermNConditionsList ul li {
+  margin: 1.2rem 0;
+  font-family: DM Sans;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.TermNConditionsList ul li::marker {
+  width: 8px;
+  height: 8px;
+  color: #6a5b40;
+}
+@media screen and (max-width: 479px) {
+  .TermNConditionsList ul li {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+/* Return N Refund */
+.rnrContainer h2 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3b3b3b;
+}
+@media screen and (max-width: 479px) {
+  .rnrContainer h2 {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.rnrContainer .rnrFaqs {
+  margin: 22px 0 28px 0;
+}
+.rnrContainer .rnrFaqs h1 {
+  font-family: DM Serif Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #0a0a0a;
+  margin: 10px 0;
+}
+@media screen and (max-width: 479px) {
+  .rnrContainer .rnrFaqs h1 {
+    font-family: DM Serif Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+}
+.rnrContainer .rnrFaqs h3 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3b3b3b;
+}
+@media screen and (max-width: 479px) {
+  .rnrContainer .rnrFaqs h3 {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+/* PRIVARCY */
+
+.privacyMain h3 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3b3b3b;
+}
+@media screen and (max-width: 479px) {
+  .privacyMain h3 {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.privacyQuestion h2 {
+  font-family: DM Serif Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #0a0a0a;
+  margin: 1.5rem 0;
+}
+@media screen and (max-width: 479px) {
+  .privacyQuestion h2 {
+    font-family: DM Serif Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
+.privacyQuestion h4 {
+  font-family: DM Serif Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #0a0a0a;
+  margin: 0.5rem 0;
+}
+@media screen and (max-width: 479px) {
+  .privacyQuestion h4 {
+    font-family: DM Serif Display;
+    font-size: 14;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
+.privacyQuestion li {
+  margin: 1rem 2rem;
+  color: #3b3b3b;
+}
+
+/* SHIPPING */
+.cancellationMain h3 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3b3b3b;
+}
+@media screen and (max-width: 479px) {
+  .cancellationMain h3 {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.cancellationFaqs h1 {
+  font-family: DM Serif Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #0a0a0a;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 479px) {
+  .cancellationFaqs h1 {
+    font-family: DM Serif Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
 }
